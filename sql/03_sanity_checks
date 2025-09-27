@@ -1,0 +1,50 @@
+-- =====================================================
+-- File   : 03_sanity_checks.sql
+-- Purpose: Validate dataset after load into sales_data
+-- Author : [Sayed Wahid]
+-- =====================================================
+
+Use ecommerce_sales  
+
+-- ========================
+-- 1. Row Count
+-- ========================
+SELECT COUNT(*) AS total_rows
+FROM sales_data;
+
+-- ========================
+-- 2. Date Range of Orders
+-- ========================
+SELECT MIN(ORDERDATE) AS first_order,
+       MAX(ORDERDATE) AS last_order
+FROM sales_data;
+
+-- ========================
+-- 3. Distinct Entity Counts
+-- ========================
+SELECT COUNT(DISTINCT CUSTOMERNAME) AS unique_customers,
+       COUNT(DISTINCT PRODUCTCODE)  AS unique_products,
+       COUNT(DISTINCT COUNTRY)      AS unique_countries,
+       COUNT(DISTINCT YEAR_ID)      AS years_present
+FROM sales_data;
+
+-- ========================
+-- 4. Sales Totals
+-- ========================
+SELECT SUM(SALES) AS total_revenue,
+       ROUND(AVG(SALES),2) AS avg_order_value,
+       MAX(SALES) AS max_order_value,
+       MIN(SALES) AS min_order_value
+FROM sales_data;
+
+-- ========================
+-- 5. Sample Preview
+-- ========================
+SELECT *
+FROM sales_data
+ORDER BY ORDERDATE DESC
+LIMIT 10;
+
+-- ========================
+-- END OF SCRIPT
+-- ========================

@@ -1,0 +1,12 @@
+# Raw data files
+*.csv
+*.xlsx
+/data/
+
+# Editor/IDE settings
+.vscode/
+.idea/
+
+# System junk
+.DS_Store
+Thumbs.db

@@ -42,6 +42,24 @@ The dataset contains sales transactions with the following fields:
 | DEALSIZE          | Size of the deal (e.g., Small, Medium, Large) |  
 
 
+🛠️ Tools & Technologies
+
+Database: MySQL 
+
+SQL Features Used:
+
+SELECT, WHERE, ORDER BY, GROUP BY
+
+JOIN (INNER, LEFT, RIGHT)
+
+Subqueries
+
+Aggregate functions (SUM, AVG, COUNT, MAX, MIN)
+
+Views
+
+Index optimization
+
 ## Project Structure
 ecommerce_sales_sql_analysis/
 │

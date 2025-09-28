@@ -96,12 +96,6 @@ ecommerce_sales_sql_analysis/
 1. **Create Table** → schema (`01_create_table.sql`)  
 2. **Load Data** → import CSV (`02_load_data.sql`)  
 3. **Sanity Checks** → verify data (`03_sanity_checks.sql`)  
-4. **Final Analysis** → queries for business insights (`04_final_analysis.sql`)
-
-## SQL Workflow
-1. **Create Table** → schema (`01_create_table.sql`)  
-2. **Load Data** → import CSV (`02_load_data.sql`)  
-3. **Sanity Checks** → verify data (`03_sanity_checks.sql`)  
 4. **Final Analysis** → queries for business insights (`04_final_analysis.sql`)  
 
 ---
